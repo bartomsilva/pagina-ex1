@@ -6,7 +6,7 @@ body {
 
 .hero {
   	background-image: url("figura1.png");
-	height: 500px;
+	height: auto;
 	background-position: right center;
 	background-size: cover;
 	border-top: 1px solid transparent;
@@ -30,21 +30,36 @@ body {
 	border-bottom: 2px solid white;
 }
 
-.hero nav ul {
+.hero-btmenu{
+	display: flex;
+	justify-content: right;
+	list-style: none;
 	text-align: right;
 	margin: 20px 50px 0 0;
 }
-.hero nav li {
-	display: inline-block;
-	list-style: none;
-	margin-left: 10px;
+
+.hero-btmenu-link {
+	background: rgba(0,0,0,0.3);
+	display: block;
+	padding: 10px;
+	margin-left: 15px;
 	border: 1px solid white;
-	/*width: 10%; /*inclui para deixar os botões no mesmo tamanho */
-	text-align: center; /*nclui para centrarlizar o texto dos botões */
+	width: 90px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 2px;
+	border-radius: 10px;
+}
+
+.hero-btmenu-link:hover {
+	background: rgba(0,0,0,0.5);
 }
 
 main {
-	width: 80%;
+	width: 100%;
 	margin: auto;
 }
 
@@ -56,26 +71,23 @@ main {
 }
 
 .card {
-	width: 32%;
+	width: 33%;
 	float: left;
 	box-sizing: border-box;
+	display: inline-block;
+	text-align: center;
+	
 }
-.card-1,
-.card-2 {
-	margin-right: 2%;
-}
-
 .card img {
-	width: 100%;
-	display: block;
+	height: 80%;
 }
-
 
 .card p {
 	background-color: #393535;
 	color: white;
 	margin: 0;
 	padding: 15px;
+	text-align: center;
 }
 
 .content-header {
@@ -99,20 +111,6 @@ main {
 	line-height: 80px;
 }
 
-.hero nav .linkmenu {
-	background: rgba(0,0,0,0.3);
-	display: block;
-	padding: 15px;
-	color: white;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 12px;
-	letter-spacing: 2px;
-}
-
-.hero nav .linkmenu:hover {
-	background: rgba(0,0,0,0.5);
-}
 
 .hero-content h1 {
 background-color: rgba(0,0,0,0.8);
